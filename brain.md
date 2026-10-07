@@ -48,7 +48,7 @@ public/_redirects           Static-host route fallback for direct page URLs
 
 - `/` — company overview and two featured deployed projects.
 - `/services/` — full service list and process.
-- `/work/` — deployed and built projects with short details.
+- `/work/` — deployed and built projects with short details. ATS Testing Platform is an Automatic Transfer Switch test workspace, not an applicant-tracking product.
 - `/about/` — company story, values, and team names.
 - `/contact/` — email, direct phone contacts, and project inquiry guidance.
 - `/blog/` — static article index, with each post at `/blog/<slug>/`.
@@ -75,7 +75,9 @@ The build sets absolute canonical URLs and sitemap links from `seo.config.json`.
 ## Content to confirm before launch
 
 - The public contact address is `info.nivrasolutions@gmail.com`; update `contactEmail` in `src/data/siteContent.js` if it changes.
-- Confirm the public wording for the Hospital Management System and AttendX deployments before launch. Interface visuals are illustrative, not product screenshots.
+- Confirm the public wording for the Hospital Management System and AttendX deployments before launch. The Home interface previews are illustrative. The Work page uses a sanitized HMS dashboard visual and PDF-extracted screenshots for ATS Testing Platform and AttendX; its other previews are illustrative.
+- The HMS image at `public/images/projects/hms-dashboard-sanitized.png` was created with the built-in image editor from the user-supplied dashboard screenshot. The edit hides the hospital name, address, phone number, live metrics, and inventory batch details while retaining the interface structure. Keep the original screenshot out of public assets.
+- ATS screenshots are from safe demo-mode overview and guided-test pages. AttendX uses a mobile navigation screenshot. Screens showing employee names, attendance records, PLC addresses, and connection details were deliberately excluded from public assets. ATS is marked `Built` until deployment status is confirmed.
 - ERP and Servify are marked `Built`; add their exact scope, stack, and deployment status when confirmed. The supplied AttendX repository path was not publicly verifiable, so no repository link is shown yet.
 - Confirm the three public names and phone numbers; add approved roles and LinkedIn URLs when available.
 - Review the software service list against the company's actual capabilities before launch.

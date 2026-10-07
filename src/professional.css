@@ -622,6 +622,61 @@ h1 em::after {
   background-color: #dfded1;
 }
 
+.ats .project-card {
+  background-color: #dce5e9;
+}
+
+.project-screenshot {
+  width: min(100%, 680px);
+  margin: 0;
+  border: 1px solid rgba(24, 43, 53, 0.16);
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 0 22px 48px rgba(24, 43, 53, 0.16);
+  overflow: hidden;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.project-card:hover .project-screenshot {
+  transform: translateY(-4px);
+  box-shadow: 0 28px 54px rgba(24, 43, 53, 0.2);
+}
+
+.project-screenshot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-screenshot--attendx {
+  width: min(49%, 220px);
+  border-radius: 20px;
+  box-shadow: 0 22px 48px rgba(66, 44, 32, 0.2);
+}
+
+.project-screenshot--ats {
+  width: min(100%, 680px);
+}
+
+.project-detail-image {
+  margin: 20px 0 0;
+}
+
+.project-detail-image img {
+  display: block;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.project-detail-image figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
 .work:not(.home-work) .heading {
   margin-bottom: 16px;
 }

@@ -140,7 +140,15 @@ const visuals = {
   servify: ServifyVisual,
 };
 
-export default function ProjectVisual({ type }) {
+export default function ProjectVisual({ type, screenshot }) {
+  if (screenshot) {
+    return (
+      <figure className={`project-screenshot project-screenshot--${type}`}>
+        <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+      </figure>
+    );
+  }
+
   const Visual = visuals[type];
   return Visual ? <Visual /> : null;
 }

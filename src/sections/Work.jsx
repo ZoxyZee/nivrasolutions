@@ -11,8 +11,8 @@ export default function Work() {
           Systems built for the work behind the scenes.
         </SectionHeading>
         <p className="work-disclaimer">
-          Project visuals are illustrative. Delivery status is shown with each
-          project.
+          HMS, ATS, and AttendX show product screenshots. Private operational
+          data in the HMS visual is hidden; other previews are illustrative.
         </p>
         <div className="project-grid">
           {projects.map((project, index) => (
@@ -25,7 +25,10 @@ export default function Work() {
                 <span className="project-card-label">
                   N/S PROJECT / 0{index + 1}
                 </span>
-                <ProjectVisual type={project.type} />
+                <ProjectVisual
+                  type={project.type}
+                  screenshot={project.screenshot}
+                />
               </div>
               <div className="project-meta">
                 <h3>{project.title}</h3>
@@ -52,6 +55,12 @@ export default function Work() {
                     ))}
                   </div>
                 )}
+                {project.gallery?.map((image) => (
+                  <figure className="project-detail-image" key={image.src}>
+                    <img src={image.src} alt={image.alt} loading="lazy" />
+                    <figcaption>{image.caption}</figcaption>
+                  </figure>
+                ))}
               </details>
             </Reveal>
           ))}

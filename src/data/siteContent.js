@@ -62,6 +62,10 @@ export const projects = [
       "Role-based controls for medicine pricing and issuing",
     ],
     stack: ["React", "Node.js", "Express", "MongoDB", "JWT", "Docker"],
+    screenshot: {
+      src: "/images/projects/hms-dashboard-sanitized.png",
+      alt: "ArogyaSuite hospital operations dashboard with private data hidden",
+    },
   },
   {
     title: "AttendX",
@@ -77,6 +81,35 @@ export const projects = [
       "JWT authentication and role-based access",
     ],
     stack: ["Python", "FastAPI", "MongoDB", "OpenCV", "JWT"],
+    screenshot: {
+      src: "/images/projects/attendx-mobile.jpg",
+      alt: "AttendX mobile navigation and face-registration interface",
+    },
+  },
+  {
+    title: "ATS Testing Platform",
+    category: "Industrial testing · Control software",
+    type: "ats",
+    status: "Built",
+    brief:
+      "An Automatic Transfer Switch testing workspace with SCADA-style monitoring, guided checks, and recorded test sessions.",
+    highlights: [
+      "Source and transfer-state overview in a demo-safe interface",
+      "Guided manual checks and test-session records",
+      "PLC connection and register-verification workflows",
+    ],
+    stack: [],
+    screenshot: {
+      src: "/images/projects/ats-overview.jpg",
+      alt: "ATS Testing Platform SCADA overview in safe demonstration mode",
+    },
+    gallery: [
+      {
+        src: "/images/projects/ats-test-procedure.jpg",
+        alt: "ATS Testing Platform guided test-procedure checklist",
+        caption: "Guided test procedure",
+      },
+    ],
   },
   {
     title: "ERP System",
