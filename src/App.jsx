@@ -37,7 +37,7 @@ export default function App({ initialPosts = [] }) {
     document.title = page?.title ?? "Page not found — NivraSolutions";
     if (page) {
       document.head.querySelector('meta[name="robots"]')?.remove();
-      const canonical = `${seoConfig.siteUrl.replace(/\/$/, "")}${pathname}`;
+      const canonical = `${__NIVRA_SITE_URL__}${pathname}`;
       setMeta('meta[name="description"]', "content", page.description);
       setMeta('meta[property="og:title"]', "content", page.title);
       setMeta('meta[property="og:description"]', "content", page.description);

@@ -1,6 +1,11 @@
 import { readFile } from "node:fs/promises";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { resolveSiteUrl } from "./scripts/site-url.mjs";
+
+const seoConfig = JSON.parse(
+  await readFile(new URL("./seo.config.json", import.meta.url), "utf8"),
+);
 
 function serveGeneratedBlog() {
   return {
@@ -41,5 +46,6 @@ function serveGeneratedBlog() {
 
 export default defineConfig({
   plugins: [serveGeneratedBlog(), react()],
+  define: { __NIVRA_SITE_URL__: JSON.stringify(resolveSiteUrl(seoConfig)) },
   build: { outDir: "dist" },
 });

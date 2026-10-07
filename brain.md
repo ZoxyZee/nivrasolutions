@@ -70,7 +70,7 @@ The Contact page derives its `contactPeople` list from `teamMembers`, so names a
 
 Edit the Markdown source, not generated `public/blog/` or `dist/` files. Use `draft: true` to keep an unfinished post out of the generated site. Avoid changing a published filename because that changes its URL.
 
-The build sets absolute canonical URLs and sitemap links from `seo.config.json`. Override with the `SITE_URL` environment variable for a different deployment domain. Set this to the actual public HTTPS domain before launch. The current configured Sites URL is private, so search engines cannot index it yet.
+The build sets absolute canonical URLs and sitemap links from one URL resolver. `SITE_URL` takes priority; on Vercel, `VERCEL_PROJECT_PRODUCTION_URL` is used when available (including a future custom domain); otherwise the fallback is `seo.config.json`. The React route metadata uses the same resolved URL. Check the deployed canonical and sitemap against the live public domain before submitting the sitemap to Search Console. The fallback Sites URL is private and should not be treated as the public domain.
 
 ## Content to confirm before launch
 

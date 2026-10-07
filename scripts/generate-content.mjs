@@ -10,6 +10,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import matter from "gray-matter";
 import MarkdownIt from "markdown-it";
+import { resolveSiteUrl } from "./site-url.mjs";
 
 const projectRoot = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
@@ -21,16 +22,12 @@ const contentRoot = path.join(projectRoot, "content", "blog");
 const config = JSON.parse(
   await readFile(path.join(projectRoot, "seo.config.json"), "utf8"),
 );
-const siteUrl = (process.env.SITE_URL || config.siteUrl).replace(/\/$/, "");
+const siteUrl = resolveSiteUrl(config);
 const markdown = new MarkdownIt({
   html: false,
   linkify: true,
   typographer: true,
 });
-
-if (!/^https:\/\/[^/]+$/.test(siteUrl)) {
-  throw new Error("Set an HTTPS siteUrl in seo.config.json or SITE_URL.");
-}
 
 const escapeHtml = (value) =>
   String(value).replace(
@@ -130,7 +127,7 @@ function head({ title, description, route, type = "website", schema }) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1d2923">
+  <meta name="theme-color" content="#192b35">
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${escapeHtml(canonical)}">
