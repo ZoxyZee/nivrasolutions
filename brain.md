@@ -7,11 +7,11 @@ NivraSolutions is a software solutions company website. It explains custom softw
 ## Creative direction
 
 - Product-led B2B presentation: a clear sans-serif type system, concise headings, and direct calls to action.
-- A restrained evergreen/graphite first screen and translucent dark navigation establish a credible opening. Warm ivory content, muted sand primary actions, dark terracotta text links, and distinct sage/clay/stone project surfaces create contrast without turning the software site into a design portfolio.
+- A deep navy first screen and translucent navy navigation establish a credible opening. Soft off-white content, powder-blue primary actions, slate-blue text links, and restrained blue-gray/neutral project surfaces create contrast without turning the software site into a design portfolio.
 - The homepage leads with capabilities before two deployed projects, so prospective clients understand the offer before browsing examples. Decorative grids and strong glows are deliberately omitted.
 - The first screen pairs a software proposition with an illustrative interface preview. UI mockups are not presented as actual client screenshots.
 - Restrained motion, including a one-time dashboard chart reveal, simple borders, and legible component layouts replace the former oversized editorial typography and decorative marquee.
-- Responsive layout with a compact mobile menu, sticky navigation, scroll progress, and reduced-motion support.
+- Responsive layout with a compact, scrollable mobile menu; phone-sized hero and project cards; wrapped contact details and blog navigation; sticky navigation, scroll progress, and reduced-motion support.
 - An explicit Home link, a manually controlled project preview in the hero, and expandable project details on Work provide useful interaction without autoplay or decorative effects.
 
 ## Code map

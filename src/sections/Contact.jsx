@@ -8,7 +8,8 @@ export default function Contact() {
         <small>Tell us what you're working on</small>
         <h1>Let's discuss your project.</h1>
         <a className="contact-link" href={`mailto:${contactEmail}`}>
-          {contactEmail} <span aria-hidden="true">↗</span>
+          <span className="contact-email">{contactEmail}</span>
+          <span aria-hidden="true">↗</span>
         </a>
       </Reveal>
       <div
