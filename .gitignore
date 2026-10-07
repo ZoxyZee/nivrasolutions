@@ -1,0 +1,8 @@
+node_modules/
+dist/
+/.openai/
+*.local
+public/blog/
+public/sitemap.xml
+public/rss.xml
+public/robots.txt

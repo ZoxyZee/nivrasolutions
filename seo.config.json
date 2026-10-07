@@ -1,0 +1,32 @@
+{
+  "siteName": "NivraSolutions",
+  "siteUrl": "https://nivra-solutions.sharma-ssiddharth56.chatgpt.site",
+  "defaultDescription": "NivraSolutions builds custom software, web applications, workflow automation, and connected digital products for growing teams.",
+  "pages": [
+    {
+      "path": "/",
+      "title": "NivraSolutions — Custom Software & Web Applications",
+      "description": "NivraSolutions plans, designs, and builds custom software, web applications, and workflow automation around real business needs."
+    },
+    {
+      "path": "/services/",
+      "title": "Services — NivraSolutions",
+      "description": "Explore custom software, web applications, automation, integrations, and product engineering services at NivraSolutions."
+    },
+    {
+      "path": "/work/",
+      "title": "Work — NivraSolutions",
+      "description": "Explore NivraSolutions projects including a deployed hospital management system, AttendX attendance platform, an ERP system, and Servify."
+    },
+    {
+      "path": "/about/",
+      "title": "About — NivraSolutions",
+      "description": "Meet NivraSolutions, a software solutions company combining product thinking, design, and engineering."
+    },
+    {
+      "path": "/contact/",
+      "title": "Contact — NivraSolutions",
+      "description": "Contact NivraSolutions by email or phone to discuss custom software, web applications, and workflow automation."
+    }
+  ]
+}
