@@ -1,10 +1,10 @@
 :root {
-  --paper: #f7f8f6;
-  --ink: #172b3e;
-  --muted: #5e7080;
-  --line: #d9e1e6;
-  --acid: #315f81;
-  --coral: #bdd8e6;
+  --paper: #f7f5f0;
+  --ink: #192b35;
+  --muted: #637078;
+  --line: #dcded9;
+  --acid: #2b657f;
+  --coral: #2f7190;
 }
 
 * {
@@ -36,7 +36,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 248, 246, 0.94);
+  background: rgba(247, 246, 242, 0.94);
   backdrop-filter: blur(18px);
 }
 .blog-nav {
@@ -179,7 +179,7 @@ a {
   letter-spacing: -0.025em;
 }
 .post-row h2 a:hover {
-  color: #315f81;
+  color: #365d70;
 }
 .post-row p {
   max-width: 620px;
@@ -271,7 +271,7 @@ a {
   text-underline-offset: 4px;
 }
 .article-body a:hover {
-  color: #315f81;
+  color: #365d70;
 }
 .article-body ul,
 .article-body ol {
@@ -496,12 +496,12 @@ a {
 
 /* Match the main site's straightforward software-company typography. */
 :root {
-  --paper: #f7f8f6;
-  --ink: #172b3e;
-  --muted: #5e7080;
-  --line: #d9e1e6;
-  --acid: #315f81;
-  --coral: #bdd8e6;
+  --paper: #f7f5f0;
+  --ink: #192b35;
+  --muted: #637078;
+  --line: #dcded9;
+  --acid: #2b657f;
+  --coral: #2f7190;
 }
 
 body {
@@ -509,15 +509,15 @@ body {
   background-image:
     radial-gradient(
       ellipse at 90% 30%,
-      rgba(119, 159, 187, 0.1),
+      rgba(114, 142, 151, 0.06),
       transparent 35%
     ),
-    linear-gradient(180deg, #fbfcfa 0%, #f0f3f2 56%, #f8faf9 100%);
+    linear-gradient(180deg, #fbfaf7 0%, #f3f3ef 56%, #f8f7f3 100%);
 }
 
 .blog-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(18, 39, 58, 0.88);
+  background: rgba(23, 42, 52, 0.88);
   color: #f7fafb;
   -webkit-backdrop-filter: blur(24px) saturate(120%);
   backdrop-filter: blur(24px) saturate(120%);
@@ -539,13 +539,13 @@ body {
 }
 
 .nav-cta {
-  border-radius: 6px;
+  border-radius: 9px;
   background: var(--coral);
-  color: var(--ink);
+  color: #ffffff;
 }
 
 .nav-cta:hover {
-  background: #d1e6f0;
+  background: #245e7b;
 }
 
 .blog-hero {
@@ -628,15 +628,15 @@ body {
   display: inline-flex;
   padding: 13px 18px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 9px;
   background: var(--coral);
-  color: var(--ink);
+  color: #ffffff;
   font-size: 15px;
   font-weight: 600;
 }
 
 .footer-grid a:hover {
-  color: var(--coral);
+  color: #a9d2df;
 }
 
 @media (max-width: 560px) {
