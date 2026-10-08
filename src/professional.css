@@ -90,16 +90,6 @@ body {
   font-size: 19px;
 }
 
-.brand-mark {
-  border-radius: 7px;
-  transform: none;
-  background: var(--coral);
-}
-
-.brand-mark::after {
-  background: var(--ink);
-}
-
 .menu {
   color: inherit;
 }

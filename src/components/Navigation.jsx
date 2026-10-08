@@ -84,7 +84,13 @@ export default function Navigation() {
             onClick={() => handleNavClick("/")}
             aria-label="NivraSolutions home"
           >
-            <span className="brand-mark" aria-hidden="true" />
+            <img
+              className="brand-mark"
+              src="/brand-mark.svg"
+              alt=""
+              width="28"
+              height="28"
+            />
             NivraSolutions
           </Link>
 

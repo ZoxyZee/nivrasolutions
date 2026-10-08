@@ -128,6 +128,7 @@ function head({ title, description, route, type = "website", schema }) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#192b35">
+  <link rel="icon" type="image/svg+xml" href="/brand-mark.svg">
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${escapeHtml(canonical)}">
@@ -148,7 +149,7 @@ function head({ title, description, route, type = "website", schema }) {
 
 const blogHeader = `<header class="blog-header">
   <div class="blog-wrap blog-nav">
-    <a class="blog-brand" href="/" aria-label="NivraSolutions home"><span class="brand-mark" aria-hidden="true"></span>NivraSolutions</a>
+    <a class="blog-brand" href="/" aria-label="NivraSolutions home"><img class="brand-mark" src="/brand-mark.svg" alt="" width="28" height="28">NivraSolutions</a>
     <nav aria-label="Main navigation">
       <a href="/">Home</a><a href="/services/">Services</a><a href="/work/">Work</a><a href="/about/">About</a><a class="active" href="/blog/">Blog</a><a class="nav-cta" href="/contact/">Start a project ↗</a>
     </nav>
