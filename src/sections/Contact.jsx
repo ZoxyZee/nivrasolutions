@@ -54,7 +54,10 @@ export default function Contact() {
         </div>
         <div>
           <span>Where we work</span>
-          <p>Based in India. Collaborating with people and teams everywhere.</p>
+          <p>
+            Available for projects worldwide, with remote collaboration and
+            clear communication across time zones.
+          </p>
         </div>
         <div>
           <span>Next step</span>
