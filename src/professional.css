@@ -1,30 +1,24 @@
 /* NivraSolutions' product-led visual layer. The base stylesheet retains layout
    and component behavior; this layer gives the site a distinctive B2B finish. */
 :root {
-  --paper: #f7f5f0;
-  --paper2: #eceeea;
-  --ink: #192b35;
-  --muted: #637078;
-  --line: #dcded9;
-  --acid: #2b657f;
-  --coral: #2f7190;
-  --soft-accent: #edf1ef;
-  --radius: 12px;
+  --paper: #f8f7f3;
+  --paper2: #eeebe4;
+  --ink: #1a2a31;
+  --muted: #56656b;
+  --line: #d8d8d1;
+  --acid: #285f78;
+  --coral: #a95637;
+  --soft-accent: #e8eeeb;
+  --radius: 10px;
 }
 
 body {
   background-color: var(--paper);
-  background-image:
-    radial-gradient(
-      ellipse at 90% 30%,
-      rgba(114, 142, 151, 0.06),
-      transparent 35%
-    ),
-    linear-gradient(180deg, #fbfaf7 0%, #f3f3ef 56%, #f8f7f3 100%);
+  background-image: none;
 }
 
 ::selection {
-  background: #d7e5e8;
+  background: #e6d2c4;
   color: var(--ink);
 }
 
@@ -41,7 +35,7 @@ body {
 
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(23, 42, 52, 0.86);
+  background: rgba(24, 40, 48, 0.9);
   color: #f7fafb;
   -webkit-backdrop-filter: blur(24px) saturate(120%);
   backdrop-filter: blur(24px) saturate(120%);
@@ -54,7 +48,7 @@ body {
 
 .site-header.is-scrolled {
   border-bottom-color: rgba(255, 255, 255, 0.15);
-  background: rgba(23, 42, 52, 0.94);
+  background: rgba(24, 40, 48, 0.96);
   box-shadow: 0 12px 34px rgba(17, 36, 53, 0.17);
 }
 
@@ -103,13 +97,13 @@ body {
 
 .pill:hover,
 .nav-links .pill:hover {
-  background: #245e7b;
+  background: #8e452d;
   color: #ffffff;
   transform: none;
 }
 
 section {
-  padding: 96px 0;
+  padding: 84px 0;
 }
 
 h1,
@@ -162,11 +156,11 @@ h1 em::after {
   color: #f7fafb;
   background:
     radial-gradient(
-      ellipse at 88% 72%,
-      rgba(119, 145, 153, 0.12),
-      transparent 44%
+      ellipse at 87% 18%,
+      rgba(169, 86, 55, 0.14),
+      transparent 38%
     ),
-    linear-gradient(125deg, #182a34 0%, #29414c 100%);
+    linear-gradient(125deg, #172932 0%, #263e48 100%);
   overflow: hidden;
 }
 
@@ -195,10 +189,10 @@ h1 em::after {
 .hero h1 {
   max-width: 720px;
   margin: 26px 0 24px;
-  font-size: clamp(52px, 5.1vw, 76px);
+  font-size: clamp(50px, 4.9vw, 70px);
   font-weight: 600;
-  line-height: 1.08;
-  letter-spacing: -0.055em;
+  line-height: 1.1;
+  letter-spacing: -0.045em;
 }
 
 .hero h1 span {
@@ -245,7 +239,7 @@ h1 em::after {
 }
 
 .button-primary:hover {
-  background: #245e7b;
+  background: #8e452d;
   transform: translateY(-2px);
 }
 
@@ -286,15 +280,15 @@ h1 em::after {
   min-width: 0;
   padding: 26px;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-radius: 18px;
-  background: #e5ebea;
+  border-radius: 14px;
+  background: #e8eeeb;
   overflow: hidden;
   box-shadow: 0 28px 68px rgba(8, 20, 25, 0.17);
   transition: background-color 0.35s ease;
 }
 
 .hero-visual--attendx {
-  background: #ece8e0;
+  background: #ece8df;
 }
 
 .hero-visual--erp {
@@ -482,7 +476,7 @@ h1 em::after {
 .page-intro h1 {
   max-width: 950px;
   margin: 24px 0 20px;
-  font-size: clamp(44px, 5.2vw, 72px);
+  font-size: clamp(44px, 5vw, 68px);
   font-weight: 600;
   line-height: 1.12;
   letter-spacing: -0.05em;
@@ -503,7 +497,7 @@ h1 em::after {
 .home-about h2,
 .team-heading h2 {
   max-width: 900px;
-  font-size: clamp(36px, 4vw, 54px);
+  font-size: clamp(34px, 3.7vw, 50px);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.045em;
@@ -515,7 +509,7 @@ h1 em::after {
 }
 
 .home-work {
-  background: transparent;
+  background: #f0f2ee;
   border: 0;
   color: var(--ink);
   padding-top: 76px;
@@ -579,8 +573,8 @@ h1 em::after {
 }
 
 .home-about {
-  padding-top: 58px;
-  padding-bottom: 72px;
+  padding-top: 72px;
+  padding-bottom: 76px;
 }
 
 .home-about > .reveal {
@@ -601,17 +595,17 @@ h1 em::after {
 
 .project-card {
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 12px;
   background-image: none;
-  box-shadow: 0 12px 30px rgba(28, 42, 47, 0.06);
+  box-shadow: 0 12px 28px rgba(28, 42, 47, 0.045);
 }
 
 .hospital .project-card {
-  background-color: #e5ebea;
+  background-color: #e7edea;
 }
 
 .attendx .project-card {
-  background-color: #eee9e1;
+  background-color: #ebe7de;
 }
 
 .erp .project-card {
@@ -619,11 +613,11 @@ h1 em::after {
 }
 
 .servify .project-card {
-  background-color: #eaeae4;
+  background-color: #f0ede7;
 }
 
 .ats .project-card {
-  background-color: #e1e8e8;
+  background-color: #e2e9ea;
 }
 
 .project-screenshot {
@@ -929,7 +923,7 @@ h1 em::after {
 }
 
 .service::before {
-  background: #eff1ee;
+  background: #efede7;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -960,7 +954,7 @@ h1 em::after {
 .about-card {
   min-height: 320px;
   border: 0;
-  border-radius: 16px;
+  border-radius: 12px;
   background: var(--ink);
   color: #ffffff;
   box-shadow: none;
@@ -999,8 +993,8 @@ h1 em::after {
 
 .team-card {
   border: 1px solid var(--line);
-  border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(7, 18, 23, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(7, 18, 23, 0.08);
 }
 
 .team-card:nth-child(2) .team-card-art {
@@ -1023,7 +1017,7 @@ h1 em::after {
   display: grid;
   width: 56px;
   height: 56px;
-  margin-top: 30px;
+  margin-top: 26px;
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1067,7 +1061,7 @@ h1 em::after {
 }
 
 .process {
-  background: #eeefeb;
+  background: var(--paper2);
   border-color: var(--line);
 }
 
@@ -1076,7 +1070,7 @@ h1 em::after {
 }
 
 .page-cta {
-  background: #233b46;
+  background: #223640;
   color: #ffffff;
 }
 
@@ -1100,7 +1094,7 @@ h1 em::after {
 }
 
 .contact {
-  background: #ecefeb;
+  background: #eeeae2;
   text-align: left;
 }
 
@@ -1316,13 +1310,7 @@ h1 em::after {
   }
 
   body {
-    background-image:
-      radial-gradient(
-        ellipse at 100% 15%,
-        rgba(114, 142, 151, 0.05),
-        transparent 45%
-      ),
-      linear-gradient(180deg, #fbfaf7 0%, #f3f3ef 100%);
+    background-image: none;
   }
 
   section {

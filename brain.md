@@ -7,7 +7,7 @@ NivraSolutions is a software solutions company website. It explains custom softw
 ## Creative direction
 
 - Product-led B2B presentation: a clear sans-serif type system, concise headings, and direct calls to action.
-- A charcoal-navy first screen and translucent navigation establish a credible opening. Warm off-white content carries most pages; one clear teal-blue action color, slate-blue links, and neutral project surfaces keep the palette focused rather than washing the whole site in blue. Rounded but restrained controls, calm card shadows, and small hover movements give the interface a modern finish.
+- A charcoal-navy first screen and translucent navigation establish a credible opening. Warm ivory content, muted blue links, and a restrained copper call-to-action color give the site clearer hierarchy without making every section blue. Neutral project surfaces, compact corners, calm shadows, and measured spacing keep it formal but not sterile.
 - The navy-and-teal N monogram in `public/brand-mark.svg` is shared by the site header, blog header, and browser-tab favicon. Keep those references aligned if the logo changes.
 - The homepage leads with capabilities before two deployed projects, so prospective clients understand the offer before browsing examples. Decorative grids and strong glows are deliberately omitted.
 - The first screen pairs a software proposition with an illustrative interface preview. UI mockups are not presented as actual client screenshots.

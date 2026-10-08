@@ -127,7 +127,7 @@ function head({ title, description, route, type = "website", schema }) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#192b35">
+  <meta name="theme-color" content="#1a2a31">
   <link rel="icon" type="image/svg+xml" href="/brand-mark.svg">
   <link rel="stylesheet" href="/cursor-follow.css">
   <script defer src="/cursor-follow.js"></script>

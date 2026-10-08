@@ -1,10 +1,10 @@
 :root {
-  --paper: #f7f5f0;
-  --ink: #192b35;
-  --muted: #637078;
-  --line: #dcded9;
-  --acid: #2b657f;
-  --coral: #2f7190;
+  --paper: #f8f7f3;
+  --ink: #1a2a31;
+  --muted: #56656b;
+  --line: #d8d8d1;
+  --acid: #285f78;
+  --coral: #a95637;
 }
 
 * {
@@ -483,29 +483,14 @@ a {
 }
 
 /* Match the main site's straightforward software-company typography. */
-:root {
-  --paper: #f7f5f0;
-  --ink: #192b35;
-  --muted: #637078;
-  --line: #dcded9;
-  --acid: #2b657f;
-  --coral: #2f7190;
-}
-
 body {
   background-color: var(--paper);
-  background-image:
-    radial-gradient(
-      ellipse at 90% 30%,
-      rgba(114, 142, 151, 0.06),
-      transparent 35%
-    ),
-    linear-gradient(180deg, #fbfaf7 0%, #f3f3ef 56%, #f8f7f3 100%);
+  background-image: none;
 }
 
 .blog-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(23, 42, 52, 0.88);
+  background: rgba(24, 40, 48, 0.92);
   color: #f7fafb;
   -webkit-backdrop-filter: blur(24px) saturate(120%);
   backdrop-filter: blur(24px) saturate(120%);
@@ -524,7 +509,7 @@ body {
 }
 
 .nav-cta:hover {
-  background: #245e7b;
+  background: #8e452d;
 }
 
 .blog-hero {
