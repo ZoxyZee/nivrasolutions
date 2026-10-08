@@ -8,19 +8,28 @@ export const teamMembers = [
     role: "",
     linkedin: "",
     phone: "+91 8923816727",
+    email: "sharma.ssiddharth17@gmail.com",
   },
   {
     name: "Ashutosh",
     role: "",
     linkedin: "",
     phone: "+91 6306345246",
+    email: "ashutoshtiwari.azby@gmail.com",
   },
-  { name: "Amit", role: "", linkedin: "", phone: "+91 8743845303" },
+  {
+    name: "Amit",
+    role: "",
+    linkedin: "",
+    phone: "+91 8743845303",
+    email: "amitsoni175@gmail.com",
+  },
 ];
 
-export const contactPeople = teamMembers.map(({ name, phone }) => ({
+export const contactPeople = teamMembers.map(({ name, phone, email }) => ({
   name,
   phone,
+  email,
 }));
 
 export const services = [

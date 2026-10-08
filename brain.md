@@ -59,9 +59,9 @@ React Router handles navigation. The production build renders each route into it
 
 ## Adding the three team profiles
 
-Edit the three `teamMembers` objects in `src/data/siteContent.js`. Each accepts `name`, `role`, `linkedin`, and `phone`. The provided names appear on About; phone numbers appear only on Contact. Add approved roles and full `https://www.linkedin.com/...` profile URLs when available. Blank or invalid LinkedIn links are omitted.
+Edit the three `teamMembers` objects in `src/data/siteContent.js`. Each accepts `name`, `role`, `linkedin`, `phone`, and `email`. The provided names appear on About; individual phone numbers and email addresses appear only on Contact. Add approved roles and full `https://www.linkedin.com/...` profile URLs when available. Blank or invalid LinkedIn links are omitted.
 
-The Contact page derives its `contactPeople` list from `teamMembers`, so names and phone numbers stay in sync. Phone links are generated as `tel:` URLs.
+The Contact page derives its `contactPeople` list from `teamMembers`, so names, phone numbers, and email addresses stay in sync. Contact links use `tel:` and `mailto:` URLs.
 
 ## Publishing a blog post
 

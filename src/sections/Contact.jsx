@@ -21,15 +21,25 @@ export default function Contact() {
           <h2 id="contact-people-title">Prefer to speak with someone?</h2>
         </div>
         <div className="contact-people-grid">
-          {contactPeople.map(({ name, phone }) => (
+          {contactPeople.map(({ name, phone, email }) => (
             <div className="contact-person" key={name}>
               <h3>{name}</h3>
-              <a
-                href={`tel:${phone.replace(/\s/g, "")}`}
-                aria-label={`Call ${name} at ${phone}`}
-              >
-                {phone} <span aria-hidden="true">↗</span>
-              </a>
+              <div className="contact-person-links">
+                <a
+                  href={`tel:${phone.replace(/\s/g, "")}`}
+                  aria-label={`Call ${name} at ${phone}`}
+                >
+                  <span className="contact-person-link-label">Phone</span>
+                  <span className="contact-person-link-value">{phone}</span>
+                </a>
+                <a
+                  href={`mailto:${email}`}
+                  aria-label={`Email ${name} at ${email}`}
+                >
+                  <span className="contact-person-link-label">Email</span>
+                  <span className="contact-person-link-value">{email}</span>
+                </a>
+              </div>
             </div>
           ))}
         </div>

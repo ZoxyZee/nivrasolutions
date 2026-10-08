@@ -1135,7 +1135,7 @@ h1 em::after {
 
 .contact-people-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 24px;
 }
 
@@ -1152,16 +1152,35 @@ h1 em::after {
   letter-spacing: -0.03em;
 }
 
+.contact-person-links {
+  display: grid;
+  gap: 18px;
+}
+
 .contact-person a {
-  display: inline-flex;
-  gap: 12px;
-  align-items: baseline;
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
   color: var(--acid);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
 
-.contact-person a:hover {
+.contact-person-link-label {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-person-link-value {
+  overflow-wrap: anywhere;
+}
+
+.contact-person a:hover .contact-person-link-value {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
