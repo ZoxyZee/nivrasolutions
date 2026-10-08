@@ -1,52 +1,78 @@
-.cursor-follow {
+.cursor-follow,
+.cursor-point {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 90;
-  width: 42px;
-  height: 42px;
-  margin: -21px 0 0 -21px;
   pointer-events: none;
+  color: #2f7190;
   opacity: 0;
   transition: opacity 180ms ease;
 }
 
-.cursor-follow::before,
-.cursor-follow::after {
-  position: absolute;
-  content: "";
-  border-radius: 50%;
+.cursor-follow {
+  z-index: 90;
+  width: 34px;
+  height: 34px;
+  margin: -17px 0 0 -17px;
+  will-change: transform;
 }
 
 .cursor-follow::before {
+  position: absolute;
   inset: 0;
-  border: 1px solid #79bdc9;
-  background: rgba(121, 189, 201, 0.1);
-  box-shadow: 0 0 0 1px rgba(25, 43, 53, 0.13);
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  background: rgba(47, 113, 144, 0.045);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
+  content: "";
   transition:
-    transform 220ms ease,
-    background 220ms ease;
+    transform 240ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-radius 240ms ease,
+    background 240ms ease;
 }
 
-.cursor-follow::after {
-  top: 19px;
-  left: 19px;
-  width: 4px;
-  height: 4px;
-  background: #79bdc9;
+.cursor-point {
+  z-index: 91;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.35);
 }
 
-.cursor-follow.is-visible {
+.cursor-follow.is-visible,
+.cursor-point.is-visible {
   opacity: 1;
 }
 
+.cursor-follow.is-on-dark,
+.cursor-point.is-on-dark {
+  color: #a9dce3;
+}
+
 .cursor-follow.is-interactive::before {
-  transform: scale(1.4);
-  background: rgba(121, 189, 201, 0.16);
+  transform: scale(1.45);
+  border-radius: 32%;
+  background: rgba(47, 113, 144, 0.12);
+}
+
+.cursor-follow.is-on-dark.is-interactive::before {
+  background: rgba(169, 220, 227, 0.13);
+}
+
+.cursor-follow.is-pressed::before {
+  transform: scale(0.82);
+}
+
+.cursor-follow.is-text,
+.cursor-point.is-text {
+  opacity: 0;
 }
 
 @media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
-  .cursor-follow {
+  .cursor-follow,
+  .cursor-point {
     display: none;
   }
 }
