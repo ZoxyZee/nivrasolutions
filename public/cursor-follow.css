@@ -1,0 +1,52 @@
+.cursor-follow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  width: 42px;
+  height: 42px;
+  margin: -21px 0 0 -21px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+.cursor-follow::before,
+.cursor-follow::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+}
+
+.cursor-follow::before {
+  inset: 0;
+  border: 1px solid #79bdc9;
+  background: rgba(121, 189, 201, 0.1);
+  box-shadow: 0 0 0 1px rgba(25, 43, 53, 0.13);
+  transition:
+    transform 220ms ease,
+    background 220ms ease;
+}
+
+.cursor-follow::after {
+  top: 19px;
+  left: 19px;
+  width: 4px;
+  height: 4px;
+  background: #79bdc9;
+}
+
+.cursor-follow.is-visible {
+  opacity: 1;
+}
+
+.cursor-follow.is-interactive::before {
+  transform: scale(1.4);
+  background: rgba(121, 189, 201, 0.16);
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .cursor-follow {
+    display: none;
+  }
+}

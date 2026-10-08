@@ -13,6 +13,7 @@ NivraSolutions is a software solutions company website. It explains custom softw
 - The first screen pairs a software proposition with an illustrative interface preview. UI mockups are not presented as actual client screenshots.
 - Restrained motion, including a one-time dashboard chart reveal, simple borders, and legible component layouts replace the former oversized editorial typography and decorative marquee.
 - Responsive layout with a compact, scrollable mobile menu; phone-sized hero and project cards; wrapped contact details and blog navigation; sticky navigation, scroll progress, and reduced-motion support.
+- A shared cursor-follow ring adds restrained desktop interaction across the React pages, blog, and 404 page. It keeps the native pointer and turns off for touch/coarse pointers and reduced-motion users.
 - An explicit Home link, a manually controlled project preview in the hero, and expandable project details on Work provide useful interaction without autoplay or decorative effects.
 
 ## Code map

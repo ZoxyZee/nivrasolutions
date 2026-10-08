@@ -129,6 +129,8 @@ function head({ title, description, route, type = "website", schema }) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#192b35">
   <link rel="icon" type="image/svg+xml" href="/brand-mark.svg">
+  <link rel="stylesheet" href="/cursor-follow.css">
+  <script defer src="/cursor-follow.js"></script>
   <title>${escapeHtml(title)}</title>
   <meta name="description" content="${escapeHtml(description)}">
   <link rel="canonical" href="${escapeHtml(canonical)}">
