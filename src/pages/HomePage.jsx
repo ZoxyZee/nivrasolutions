@@ -38,8 +38,8 @@ export default function HomePage({ initialPosts = [] }) {
             <h2>Software built for real operations.</h2>
           </Reveal>
           <p className="home-work-context">
-            A look at two deployed systems. The interface previews are
-            illustrative; the project descriptions reflect the work delivered.
+            Two deployed systems shown with actual product screenshots. Private
+            details in the hospital image have been obscured.
           </p>
           <div className="project-grid">
             {featuredProjects.map((project, index) => (
@@ -52,7 +52,10 @@ export default function HomePage({ initialPosts = [] }) {
                   <span className="project-card-label">
                     N/S PROJECT / 0{index + 1}
                   </span>
-                  <ProjectVisual type={project.type} />
+                  <ProjectVisual
+                    type={project.type}
+                    screenshot={project.screenshot}
+                  />
                 </div>
                 <div className="project-meta">
                   <h3>{project.title}</h3>

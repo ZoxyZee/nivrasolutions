@@ -570,6 +570,14 @@ h1 em::after {
   aspect-ratio: 1.42;
 }
 
+.home-work .project-screenshot--hospital {
+  width: min(100%, 600px);
+}
+
+.home-work .project-screenshot--attendx {
+  width: min(43%, 195px);
+}
+
 .attendx .phone.dark {
   transform: translateY(16px);
 }
@@ -1356,6 +1364,10 @@ h1 em::after {
   .home-work .relay .project-card {
     height: 320px;
     min-height: 320px;
+  }
+
+  .home-work .project-screenshot--attendx {
+    width: min(48%, 170px);
   }
 
   .work:not(.home-work) .project-card {
