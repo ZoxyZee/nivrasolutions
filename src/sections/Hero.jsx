@@ -8,6 +8,8 @@ const featuredProjects = projects.filter((project) => project.featured);
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeProject = featuredProjects[activeIndex];
+  const heroScreenshot =
+    activeProject.type === "hospital" ? activeProject.screenshot : null;
   const showProject = (direction) => {
     setActiveIndex(
       (index) =>
@@ -43,7 +45,10 @@ export default function Hero() {
         </div>
         <div className={`hero-visual hero-visual--${activeProject.type}`}>
           <div className="hero-visual-top">
-            <span>Selected project / illustrative UI</span>
+            <span>
+              Selected project /{" "}
+              {heroScreenshot ? "Actual product UI" : "Illustrative UI"}
+            </span>
             <span>
               {String(activeIndex + 1).padStart(2, "0")} /{" "}
               {String(featuredProjects.length).padStart(2, "0")}
@@ -54,7 +59,11 @@ export default function Hero() {
             id="hero-concept-stage"
             key={activeProject.type}
           >
-            <ProjectVisual type={activeProject.type} />
+            <ProjectVisual
+              type={activeProject.type}
+              screenshot={heroScreenshot}
+              loading={heroScreenshot ? "eager" : "lazy"}
+            />
           </div>
           <div className="hero-visual-bottom">
             <div className="hero-visual-caption" aria-live="polite">
@@ -64,11 +73,11 @@ export default function Hero() {
             <div
               className="hero-visual-controls"
               role="group"
-              aria-label="Browse software concepts"
+              aria-label="Browse featured projects"
             >
               <button
                 type="button"
-                aria-label="Previous concept"
+                aria-label="Previous project"
                 aria-controls="hero-concept-stage"
                 onClick={() => showProject(-1)}
               >
@@ -76,7 +85,7 @@ export default function Hero() {
               </button>
               <button
                 type="button"
-                aria-label="Next concept"
+                aria-label="Next project"
                 aria-controls="hero-concept-stage"
                 onClick={() => showProject(1)}
               >

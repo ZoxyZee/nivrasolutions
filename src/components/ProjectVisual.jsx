@@ -140,11 +140,16 @@ const visuals = {
   servify: ServifyVisual,
 };
 
-export default function ProjectVisual({ type, screenshot }) {
+export default function ProjectVisual({ type, screenshot, loading = "lazy" }) {
   if (screenshot) {
     return (
       <figure className={`project-screenshot project-screenshot--${type}`}>
-        <img src={screenshot.src} alt={screenshot.alt} loading="lazy" />
+        <img
+          src={screenshot.src}
+          alt={screenshot.alt}
+          loading={loading}
+          fetchPriority={loading === "eager" ? "high" : undefined}
+        />
       </figure>
     );
   }
