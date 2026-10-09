@@ -336,7 +336,7 @@ h1 em::after {
   max-width: 100%;
 }
 
-.hero-visual-stage > .project-screenshot--hospital {
+.hero-visual-stage > .project-screenshot {
   width: 100%;
   border-radius: 10px;
   box-shadow: 0 18px 42px rgba(17, 36, 53, 0.15);
@@ -575,7 +575,7 @@ h1 em::after {
 }
 
 .home-work .project-screenshot--attendx {
-  width: min(43%, 195px);
+  width: min(100%, 600px);
 }
 
 .attendx .phone.dark {
@@ -659,9 +659,7 @@ h1 em::after {
 }
 
 .project-screenshot--attendx {
-  width: min(49%, 220px);
-  border-radius: 20px;
-  box-shadow: 0 22px 48px rgba(31, 51, 67, 0.2);
+  width: min(100%, 680px);
 }
 
 .project-screenshot--ats {
@@ -677,6 +675,10 @@ h1 em::after {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 8px;
+}
+
+.project-detail-image--portrait {
+  max-width: 280px;
 }
 
 .project-detail-image figcaption {
@@ -1364,10 +1366,6 @@ h1 em::after {
   .home-work .relay .project-card {
     height: 320px;
     min-height: 320px;
-  }
-
-  .home-work .project-screenshot--attendx {
-    width: min(48%, 170px);
   }
 
   .work:not(.home-work) .project-card {

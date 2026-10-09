@@ -91,9 +91,17 @@ export const projects = [
     ],
     stack: ["Python", "FastAPI", "MongoDB", "OpenCV", "JWT"],
     screenshot: {
-      src: "/images/projects/attendx-mobile.jpg",
-      alt: "AttendX mobile navigation and face-registration interface",
+      src: "/images/projects/attendx-overview.jpg",
+      alt: "AttendXSuite admin overview showing hospital attendance controls and summary cards",
     },
+    gallery: [
+      {
+        src: "/images/projects/attendx-mobile.jpg",
+        alt: "AttendXSuite mobile face-registration navigation",
+        caption: "Mobile face registration",
+        portrait: true,
+      },
+    ],
   },
   {
     title: "ATS Testing Platform",

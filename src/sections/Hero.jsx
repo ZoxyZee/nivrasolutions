@@ -8,8 +8,7 @@ const featuredProjects = projects.filter((project) => project.featured);
 export default function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeProject = featuredProjects[activeIndex];
-  const heroScreenshot =
-    activeProject.type === "hospital" ? activeProject.screenshot : null;
+  const heroScreenshot = activeProject.screenshot;
   const showProject = (direction) => {
     setActiveIndex(
       (index) =>
@@ -45,10 +44,7 @@ export default function Hero() {
         </div>
         <div className={`hero-visual hero-visual--${activeProject.type}`}>
           <div className="hero-visual-top">
-            <span>
-              Selected project /{" "}
-              {heroScreenshot ? "Actual product UI" : "Illustrative UI"}
-            </span>
+            <span>Selected project / Actual product UI</span>
             <span>
               {String(activeIndex + 1).padStart(2, "0")} /{" "}
               {String(featuredProjects.length).padStart(2, "0")}

@@ -56,7 +56,10 @@ export default function Work() {
                   </div>
                 )}
                 {project.gallery?.map((image) => (
-                  <figure className="project-detail-image" key={image.src}>
+                  <figure
+                    className={`project-detail-image${image.portrait ? " project-detail-image--portrait" : ""}`}
+                    key={image.src}
+                  >
                     <img src={image.src} alt={image.alt} loading="lazy" />
                     <figcaption>{image.caption}</figcaption>
                   </figure>
