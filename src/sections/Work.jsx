@@ -15,16 +15,13 @@ export default function Work() {
           data in the HMS visual is hidden; other previews are illustrative.
         </p>
         <div className="project-grid">
-          {projects.map((project, index) => (
+          {projects.map((project) => (
             <Reveal
               as="article"
               className={`project ${project.type}`}
               key={project.title}
             >
               <div className="project-card">
-                <span className="project-card-label">
-                  N/S PROJECT / 0{index + 1}
-                </span>
                 <ProjectVisual
                   type={project.type}
                   screenshot={project.screenshot}

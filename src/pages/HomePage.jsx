@@ -42,16 +42,13 @@ export default function HomePage({ initialPosts = [] }) {
             details in the hospital image have been obscured.
           </p>
           <div className="project-grid">
-            {featuredProjects.map((project, index) => (
+            {featuredProjects.map((project) => (
               <Reveal
                 as="article"
                 className={`project ${project.type}`}
                 key={project.title}
               >
                 <div className="project-card">
-                  <span className="project-card-label">
-                    N/S PROJECT / 0{index + 1}
-                  </span>
                   <ProjectVisual
                     type={project.type}
                     screenshot={project.screenshot}

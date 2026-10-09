@@ -166,6 +166,26 @@ const blogFooter = `<footer class="blog-footer">
   </div>
 </footer>`;
 
+function comingSoonHtml() {
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, follow">
+  <title>Coming soon — ${escapeHtml(config.siteName)}</title>
+  <style>
+    html, body { min-height: 100%; }
+    body { display: grid; min-height: 100vh; min-height: 100svh; margin: 0; place-items: center; background: #f8f7f3; color: #1a2a31; font-family: Arial, sans-serif; }
+    h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 600; letter-spacing: -0.055em; }
+  </style>
+</head>
+<body>
+  <main><h1>Coming soon</h1></main>
+</body>
+</html>`;
+}
+
 function indexHtml(posts) {
   const articles = posts
     .map(
@@ -370,7 +390,7 @@ async function main() {
   await mkdir(outputRoot, { recursive: true });
   const blogRoot = await replaceGeneratedBlog();
 
-  await writeFile(path.join(blogRoot, "index.html"), indexHtml(posts));
+  await writeFile(path.join(blogRoot, "index.html"), comingSoonHtml());
   await writeFile(
     path.join(blogRoot, "posts.json"),
     JSON.stringify(

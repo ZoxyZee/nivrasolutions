@@ -438,17 +438,7 @@ section {
   border-radius: calc(var(--radius) - 9px);
   pointer-events: none;
 }
-.project-card-label {
-  position: absolute;
-  top: 28px;
-  left: 29px;
-  z-index: 2;
-  color: var(--ink);
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-}
-.project-card > :not(.project-card-label) {
+.project-card > * {
   position: relative;
   z-index: 1;
 }
