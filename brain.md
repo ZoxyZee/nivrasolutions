@@ -7,8 +7,8 @@ NivraSolutions is a software solutions company website. It explains custom softw
 ## Creative direction
 
 - Product-led B2B presentation: a clear sans-serif type system, concise headings, and direct calls to action.
-- A charcoal-navy first screen and translucent navigation establish a credible opening. Warm ivory content, muted blue links, and a restrained copper call-to-action color give the site clearer hierarchy without making every section blue. Neutral project surfaces, compact corners, calm shadows, and measured spacing keep it formal but not sterile.
-- The navy-and-teal N monogram in `public/brand-mark.svg` is shared by the site header, blog header, and browser-tab favicon. Keep those references aligned if the logo changes.
+- A brighter teal first screen and translucent deep-blue navigation lead into warm ivory content. Coral calls to action, golden highlights, and distinct but coordinated project-card tints add energy while preserving readable contrast and a professional B2B feel.
+- The teal-and-gold N monogram in `public/brand-mark.svg` is shared by the site header, blog header, and browser-tab favicon. Keep those references aligned if the logo changes.
 - The homepage leads with capabilities before two deployed projects, so prospective clients understand the offer before browsing examples. Selected Work reuses the real HMS and AttendX screenshots from the Work page; private HMS details are obscured. Decorative grids and strong glows are deliberately omitted.
 - The first screen pairs a software proposition with a manually controlled project preview. HMS uses its sanitized dashboard screenshot; AttendX uses the real admin overview extracted from the supplied AttendXsuits PDF. Both slides are labelled as actual product UI.
 - Restrained motion, including a one-time dashboard chart reveal, simple borders, and legible component layouts replace the former oversized editorial typography and decorative marquee.
@@ -76,7 +76,7 @@ The build sets absolute canonical URLs and sitemap links from one URL resolver. 
 
 ## Content to confirm before launch
 
-- The public contact address is `info.nivrasolutions@gmail.com`; update `contactEmail` in `src/data/siteContent.js` if it changes.
+- The public contact address is `contact@nivrasolutions.com`; update `contactEmail` in `src/data/siteContent.js` if it changes.
 - Confirm the public wording for the Hospital Management System and AttendX deployments before launch. The Home interface previews are illustrative. The Work page uses a sanitized HMS dashboard visual and PDF-extracted screenshots for ATS Testing Platform and AttendX; its other previews are illustrative.
 - The HMS image at `public/images/projects/hms-dashboard-sanitized.png` was created with the built-in image editor from the user-supplied dashboard screenshot. The edit hides the hospital name, address, phone number, live metrics, and inventory batch details while retaining the interface structure. Keep the original screenshot out of public assets.
 - ATS screenshots are from safe demo-mode overview and guided-test pages. AttendX uses a mobile navigation screenshot. Screens showing employee names, attendance records, PLC addresses, and connection details were deliberately excluded from public assets. ATS is marked `Built` until deployment status is confirmed.

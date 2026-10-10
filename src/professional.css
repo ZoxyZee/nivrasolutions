@@ -1,14 +1,14 @@
 /* NivraSolutions' product-led visual layer. The base stylesheet retains layout
    and component behavior; this layer gives the site a distinctive B2B finish. */
 :root {
-  --paper: #f8f7f3;
-  --paper2: #eeebe4;
-  --ink: #1a2a31;
-  --muted: #56656b;
-  --line: #d8d8d1;
-  --acid: #285f78;
-  --coral: #a95637;
-  --soft-accent: #e8eeeb;
+  --paper: #fffaf3;
+  --paper2: #fff0e2;
+  --ink: #172a35;
+  --muted: #52616a;
+  --line: #d7e0db;
+  --acid: #006f78;
+  --coral: #c04b33;
+  --soft-accent: #e7f6f2;
   --radius: 10px;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 ::selection {
-  background: #e6d2c4;
+  background: #ffdcaa;
   color: var(--ink);
 }
 
@@ -35,7 +35,7 @@ body {
 
 .site-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(22, 43, 42, 0.92);
+  background: rgba(18, 52, 64, 0.92);
   color: #f7fafb;
   -webkit-backdrop-filter: blur(24px) saturate(120%);
   backdrop-filter: blur(24px) saturate(120%);
@@ -48,7 +48,7 @@ body {
 
 .site-header.is-scrolled {
   border-bottom-color: rgba(255, 255, 255, 0.15);
-  background: rgba(19, 39, 38, 0.97);
+  background: rgba(15, 48, 60, 0.97);
   box-shadow: 0 12px 34px rgba(17, 36, 53, 0.17);
 }
 
@@ -90,14 +90,14 @@ body {
 
 .pill,
 .nav-links .pill {
-  background: #a95539;
+  background: var(--coral);
   color: #ffffff;
   border-radius: 9px;
 }
 
 .pill:hover,
 .nav-links .pill:hover {
-  background: #8e402b;
+  background: #a83d2a;
   color: #ffffff;
   transform: none;
 }
@@ -156,16 +156,16 @@ h1 em::after {
   color: #f7fafb;
   background:
     radial-gradient(
-      ellipse at 88% 14%,
-      rgba(193, 126, 87, 0.15),
-      transparent 42%
+      ellipse at 90% 12%,
+      rgba(255, 199, 115, 0.2),
+      transparent 40%
     ),
     radial-gradient(
-      ellipse at 12% 90%,
-      rgba(85, 135, 116, 0.17),
-      transparent 48%
+      ellipse at 7% 88%,
+      rgba(18, 164, 157, 0.3),
+      transparent 46%
     ),
-    linear-gradient(120deg, #102827 0%, #1b3b39 58%, #284a46 100%);
+    linear-gradient(118deg, #103b4a 0%, #0d6172 58%, #1b7070 100%);
   overflow: hidden;
 }
 
@@ -184,11 +184,11 @@ h1 em::after {
 }
 
 .hero .eyebrow {
-  color: #dce7de;
+  color: #f1fbf7;
 }
 
 .hero .eyebrow::before {
-  background: #d58b69;
+  background: #ffc66d;
 }
 
 .hero h1 {
@@ -202,13 +202,13 @@ h1 em::after {
 
 .hero h1 span {
   display: inline;
-  color: #dce9dd;
+  color: #ffe1aa;
 }
 
 .hero-content > p {
   max-width: 600px;
   margin: 0;
-  color: #d5e2db;
+  color: #f1fbf7;
   font-size: clamp(17px, 1.5vw, 20px);
   line-height: 1.62;
 }
@@ -239,24 +239,24 @@ h1 em::after {
 }
 
 .button-primary {
-  background: #a95539;
+  background: var(--coral);
   color: #ffffff;
 }
 
 .button-primary:hover {
-  background: #8e402b;
+  background: #a83d2a;
   transform: translateY(-2px);
 }
 
 .button-secondary {
-  border: 1px solid rgba(222, 237, 228, 0.5);
-  background: rgba(236, 244, 237, 0.07);
+  border: 1px solid rgba(232, 255, 247, 0.65);
+  background: rgba(232, 255, 247, 0.1);
   color: #f7fafb;
 }
 
 .button-secondary:hover {
-  border-color: #d58b69;
-  background: rgba(236, 244, 237, 0.13);
+  border-color: #ffc66d;
+  background: rgba(232, 255, 247, 0.18);
 }
 
 .hero-capabilities {
@@ -266,14 +266,14 @@ h1 em::after {
   margin-top: 36px;
   padding-top: 21px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  color: #d5e2da;
+  color: #f1fbf7;
   font-size: 12px;
 }
 
 .hero-capabilities span + span::before {
   content: "/";
   margin-right: 22px;
-  color: #d58b69;
+  color: #ffc66d;
 }
 
 .hero-visual {
@@ -286,22 +286,31 @@ h1 em::after {
   padding: 26px;
   border: 1px solid rgba(255, 255, 255, 0.42);
   border-radius: 14px;
-  background: #f3f0e8;
+  background: #fff4df;
   overflow: hidden;
   box-shadow: 0 28px 68px rgba(8, 20, 25, 0.17);
   transition: background-color 0.35s ease;
 }
 
 .hero-visual--attendx {
-  background: #f1ede5;
+  background: #fff0e5;
 }
 
 .hero-visual--erp {
-  background: #efeee7;
+  background: #f0edff;
 }
 
 .hero-visual::before {
-  display: none;
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    #ffc66d 0 34%,
+    #ed7352 34% 67%,
+    #25aaa3 67%
+  );
 }
 
 .hero-visual > * {
@@ -326,7 +335,7 @@ h1 em::after {
   height: 7px;
   margin-right: 8px;
   border-radius: 2px;
-  background: var(--acid);
+  background: #0e8d91;
 }
 
 .hero-visual-stage {
@@ -520,7 +529,7 @@ h1 em::after {
 }
 
 .home-work {
-  background: #f0f2ee;
+  background: #eff9f6;
   border: 0;
   color: var(--ink);
   padding-top: 60px;
@@ -620,23 +629,23 @@ h1 em::after {
 }
 
 .hospital .project-card {
-  background-color: #e7edea;
+  background-color: #dff3f1;
 }
 
 .attendx .project-card {
-  background-color: #ebe7de;
+  background-color: #fff0e5;
 }
 
 .erp .project-card {
-  background-color: #e7e9e5;
+  background-color: #ececfc;
 }
 
 .servify .project-card {
-  background-color: #f0ede7;
+  background-color: #fff0d4;
 }
 
 .ats .project-card {
-  background-color: #e2e9ea;
+  background-color: #e4efff;
 }
 
 .project-screenshot {
@@ -964,7 +973,7 @@ h1 em::after {
 }
 
 .service::before {
-  background: #efede7;
+  background: #e7f7f2;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -996,7 +1005,7 @@ h1 em::after {
   min-height: 320px;
   border: 0;
   border-radius: 12px;
-  background: var(--ink);
+  background: #0e5665;
   color: #ffffff;
   box-shadow: none;
   transform: none;
@@ -1039,11 +1048,11 @@ h1 em::after {
 }
 
 .team-card:nth-child(2) .team-card-art {
-  background: #dce7e6;
+  background: #ccefe8;
 }
 
 .team-card:nth-child(3) .team-card-art {
-  background: #e9e5dc;
+  background: #ffe0c5;
 }
 
 .team-card-body {
@@ -1111,7 +1120,7 @@ h1 em::after {
 }
 
 .page-cta {
-  background: #223640;
+  background: #115c6e;
   color: #ffffff;
 }
 
@@ -1135,7 +1144,7 @@ h1 em::after {
 }
 
 .contact {
-  background: #eeeae2;
+  background: #e8f7f2;
   text-align: left;
 }
 

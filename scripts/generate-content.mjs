@@ -127,7 +127,7 @@ function head({ title, description, route, type = "website", schema }) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#1a2a31">
+  <meta name="theme-color" content="#123440">
   <link rel="icon" type="image/svg+xml" href="/brand-mark.svg">
   <link rel="stylesheet" href="/cursor-follow.css">
   <script defer src="/cursor-follow.js"></script>
@@ -176,7 +176,7 @@ function comingSoonHtml() {
   <title>Coming soon — ${escapeHtml(config.siteName)}</title>
   <style>
     html, body { min-height: 100%; }
-    body { display: grid; min-height: 100vh; min-height: 100svh; margin: 0; place-items: center; background: #f8f7f3; color: #1a2a31; font-family: Arial, sans-serif; }
+    body { display: grid; min-height: 100vh; min-height: 100svh; margin: 0; place-items: center; background: #fffaf3; color: #172a35; font-family: Arial, sans-serif; }
     h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 600; letter-spacing: -0.055em; }
   </style>
 </head>

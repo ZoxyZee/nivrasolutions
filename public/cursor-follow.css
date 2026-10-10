@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   pointer-events: none;
-  color: #285f78;
+  color: #006f78;
   opacity: 0;
   transition: opacity 180ms ease;
 }
@@ -22,7 +22,7 @@
   inset: 0;
   border: 1px solid currentColor;
   border-radius: 50%;
-  background: rgba(40, 95, 120, 0.045);
+  background: rgba(0, 111, 120, 0.045);
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
   content: "";
   transition:
@@ -48,13 +48,13 @@
 
 .cursor-follow.is-on-dark,
 .cursor-point.is-on-dark {
-  color: #a9dce3;
+  color: #ffe1aa;
 }
 
 .cursor-follow.is-interactive::before {
   transform: scale(1.45);
   border-radius: 32%;
-  background: rgba(40, 95, 120, 0.12);
+  background: rgba(0, 111, 120, 0.12);
 }
 
 .cursor-follow.is-on-dark.is-interactive::before {

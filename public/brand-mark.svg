@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NivraSolutions">
-  <rect width="64" height="64" rx="14" fill="#285f78"/>
+  <rect width="64" height="64" rx="14" fill="#006f78"/>
   <path d="M17 46V18M47 46V18" fill="none" stroke="#f7f5f0" stroke-linecap="square" stroke-width="7"/>
-  <path d="M17 18 47 46" fill="none" stroke="#e7b493" stroke-linecap="square" stroke-width="7"/>
+  <path d="M17 18 47 46" fill="none" stroke="#ffc66d" stroke-linecap="square" stroke-width="7"/>
 </svg>

@@ -1,10 +1,10 @@
 :root {
-  --paper: #f8f7f3;
-  --ink: #1a2a31;
-  --muted: #56656b;
-  --line: #d8d8d1;
-  --acid: #285f78;
-  --coral: #a95637;
+  --paper: #fffaf3;
+  --ink: #172a35;
+  --muted: #52616a;
+  --line: #d7e0db;
+  --acid: #006f78;
+  --coral: #c04b33;
 }
 
 * {
@@ -36,7 +36,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 246, 242, 0.94);
+  background: rgba(255, 250, 243, 0.94);
   backdrop-filter: blur(18px);
 }
 .blog-nav {

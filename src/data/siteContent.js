@@ -1,5 +1,5 @@
 // Edit this file when the company's services, concepts, team, or process change.
-export const contactEmail = "info.nivrasolutions@gmail.com";
+export const contactEmail = "contact@nivrasolutions.com";
 
 // Add approved roles and LinkedIn profiles when available.
 export const teamMembers = [
